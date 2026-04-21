@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumidor de Textos con OpenAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Resumidor de Textos con OpenAI</h1>
+    <p class="subtitle">Versión Producción — Backend en Supabase</p>
+    
+    <textarea 
+      id="textInput" 
+      placeholder="Pega aquí el texto que quieres resumir..."
+      rows="8"
+    ></textarea>
+    
+    <button id="resumeBtn">Resumir Texto</button>
+    
+    <div id="result" class="result-box" style="display:none;">
+      <h3>📌 Resumen:</h3>
+      <p id="resumeOutput"></p>
+    </div>
+    
+    <div id="loading" class="loading" style="display:none;">
+      ⏳ OpenAI está procesando...
+    </div>
+    
+    <div id="error" class="error" style="display:none;"></div>
+
+    <footer class="footer">
+      <p>
+        Proyecto Full Stack: Frontend (HTML/CSS/JS) + Backend (Supabase Edge Functions) + AI (OpenAI API)
+      </p>
+      <p>
+        <a href="https://github.com/Piitboy90" target="_blank">GitHub: @Piitboy90</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
